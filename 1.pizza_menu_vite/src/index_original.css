@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 (p) / 18(h3) / 20 / 24 (h2) / 30 / 36 / 44 (h1) /52 / 62 / 74 / 86 / 98
+*/
+
+/***** ATOMO FUENTE TIPOGRAFICA ********/
+
+/*
+Fuente: Roboto Mono
+
+font weight:
+default: 400
+h1: 700
+h2: 600
+h3 y  button: 500
+
+font size:
+default: 16
+h1: 44
+h2: 24
+h3: 18
+*/
+
+/** ATOMO COLORES **/
+
+/*
+  text: #575757;
+  header: #edc84b;
+  header-hover: #e9bb24;
+  card-pizza-bg: #f0f0f0;
+  card-pizza-sold-out: #888;
+
+*/
+
+/*
+ATENCION TRES MODIFICACIONES:
+
+ 1. menu deja de ser un flex, me ha tocado los...
+ yo uso flex para los gap y los align item center
+ pero en este caso, me interesa que se estire strech, asi que fuera,
+ y lo he cambiado por margin: 0 auto, text align centert y margin bottom
+
+2. No es necesario poner al footer font size: 16px para que lo coja el button
+ya con poner inherit, ya lo coge de algun container padre.
+
+
+3. Uso de unidades relativas y absolutas
+Me chocaba mucho usar unidades absolutas en la img, cuando su container
+padre estaba en unidades relativas, eso iba a desbordar en alguna resolución
+
+opción 1: padre en undiades absolutas, e hijo en absolutas
+opción 2: padre sigue en relativas, no obstante le pongo un max-width e hija tbe relativa
+ya no hay desbordamiento
+
+
+*/
+
+/*
+Ejemplo con min y max width y height para responsive
+Uso de css anidado => presentación de SASS
+Legibilidad =
+=> CSS en cascada
+=> Modulos CSS (scope local)
+=> Estilando con clases
+=> CSS anidado
+=> nomenclatura significativa incluso podrías usar BEM o parte de ella
+*/
+
+/* 
+Repaso box-sizing: border-box;
+Repaso inherit en elemento tipo isla (elementos de form => button)
+*/
+
+/*
+Dos formas de hacer responsive un grid
+La media query te da mas flexibilidad, cuando quieres una columnas en cuestion
+
+*/
+
+/*
+debugger de css:
+background color y border
+
+*/
+
+:root {
+  --color-text: #575757;
+  --color-header: #edc84b;
+  --color-pizza-bg: #f0f0f0;
+  --color-sold-out: #888;
+  --color-container-bg: red;
+  --color-button-cta: #d8c47f;
+  --color-button-cta-hover: #6b5302;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 40px;
+  padding: 10px 10px;
+  min-height: 100vh;
+}
+
+.header h1 {
+  color: var(--color-header);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.menu h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pizzas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /*   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  gap: 10px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pizza {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--color-pizza-bg);
+  align-items: center;
+}
+
+.pizza img {
+  /*   width: clamp(80px, 25%, 160px); */
+  width: 25%;
+  height: auto;
+  object-fit: contain;
+}
+
+.pizza-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pizza-text h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.pizza-text p {
+  font-style: italic;
+}
+
+.pizza.sold-out {
+  color: var(--color-sold-out);
+}
+
+.pizza.sold-out img {
+  filter: grayscale();
+  opacity: 0.8;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* quizás o podrías dejar por legibilidad */
+  font-size: 16px;
+}
+
+.btn {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  font-weight: 500;
+  background-color: var(--color-button-cta);
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--color-button-cta-hover);
+}
+
+/*** MEDIA QUERY **/
+
+@media (max-width: 768px) {
+  .pizzas {
+    grid-template-columns: 1fr;
+  }
+}
