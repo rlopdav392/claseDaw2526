@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Sticky</title>
+    <style>
+      body {
+        margin: 0;
+        height: 2000px;
+      }
+
+      .header {
+        background-color: coral;
+        padding: 20px;
+        position: sticky;
+        top: 0; /* Se pega al llegar a la parte superior de la ventana */
+        z-index: 1000; /* Para asegurarse de que esté sobre otros elementos */
+      }
+
+      .contenido {
+        margin-top: 50px;
+        height: 1500px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">Esto es un header sticky</div>
+
+    <div class="contenido">
+      <p>Contenido desplazable...</p>
+    </div>
+  </body>
+</html>

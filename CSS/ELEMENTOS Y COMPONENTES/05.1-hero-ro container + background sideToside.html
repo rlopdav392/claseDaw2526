@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTAINER + BACKGROUND SIDE TO SIDE</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: chocolate;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px; /*sino le ponemos width no va a funcionar el margin*/
+        padding: 32px 64px;
+      }
+
+      .box1 {
+        margin-top: 32px;
+        background-color: aqua;
+        margin-bottom: 64px;
+      }
+
+      .box2 {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container box1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+        temporibus et error excepturi reiciendis quis, aliquid, neque,
+        voluptates doloremque asperiores adipisci ex! Illo autem perferendis
+        eaque asperiores harum cum minima?
+      </p>
+    </div>
+
+    <div class="container box2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+        temporibus et error excepturi reiciendis quis, aliquid, neque,
+        voluptates doloremque asperiores adipisci ex! Illo autem perferendis
+        eaque asperiores harum cum minima?
+      </p>
+    </div>
+  </body>
+</html>

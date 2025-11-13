@@ -1,0 +1,62 @@
+/****************************************/
+/* ATOMS - PERSONALITY CONSISTENCY  SYSTEM*/
+/****************************************/
+/*
+     /*
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+            MAIN COLOR: #087f5b
+            GREY FOR TEXT: #343a40
+        */
+
+/* ------------------------ */
+/* GLOBAL/UNIVERSAL STYLES */
+/* ------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL/REUSABLE STYLES */
+/* ------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES -  */
+/* ------------------------ */
+
+section{
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+
+section img{
+  width: 0%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+
+section img:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+.carrusel{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
