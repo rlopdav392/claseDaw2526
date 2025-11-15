@@ -62,7 +62,7 @@ const observer = new IntersectionObserver(
 
 - Entonces: con threshold:0 activo sticky cuando salga por completo del viewport el container sentinel
   Pero si quiero que el sticky se active 15 pixel antes de que salga del viewport sentinel (height de sentinel
-  tendría que ser > 15px), uso threshold:0 con rootMargin negativo -15PX
+  tendría que ser > 15px), uso threshold:0 con rootMargin negativo -15px
 
 ```jsx
 const observer = new IntersectionObserver(
