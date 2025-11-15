@@ -1,16 +1,77 @@
-# React + Vite
+# MOVIDA OBSERVADOR
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Se observa la intersección con el viewport de un container invisible "sentinel" que este justo encima del container sticky
 
-Currently, two official plugins are available:
+observer.observe(sentinelRef.current);
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## PORCENTAJE DE VISIBILIDAD HACIENDO USO DE THRESHOLD
 
-## React Compiler
+## Porcentaje de visitiblidad [threshold: 0, 0.5, 1] para que entry.isIntersecting sea true
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- si al menos 1 píxel del elemento está visible => threshold: 0
+- Si al menos la mitad del elemento está visible => threshold: 0.5
+- si todo el elemento está completamente visible => threshold: 1
 
-## Expanding the ESLint configuration
+En este ejemplo cuando sentinel pierde toda la visibilidad (threshold: 0) ya no intersecta y se activa sticky
+Solo intersecta cuando por lo menos tenga un pixel de visibilidad, si no tiene ningun pixel en viewwport ya no intersecta
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```jsx
+const observer = new IntersectionObserver(
+  ([entry]) => {
+    setIsSticky(!entry.isIntersecting);
+  },
+  {
+    threshold: 0,
+  }
+);
+```
+
+En este ejemplo cuando sentinel pierde más de la mitad de visibilidad (threshold: 0.5) ya no intersecta y se activa
+sticky
+Solo intersecta cuando esté la mitad visible en el viewport, menos de la mitad (49%) ya no interecta
+
+```jsx
+const observer = new IntersectionObserver(
+  ([entry]) => {
+    setIsSticky(!entry.isIntersecting);
+  },
+  {
+    threshold: 0.5,
+  }
+);
+```
+
+En este ejemplo cuando sentinel pierde aunque sea un pixel de visibilidad (threshold: 1 ) ya no intersecta y se activa sticky
+Solo interecta cuando esté por completo en el viewport, si pierda un pixel de visibilidad ya no intersecta
+
+```jsx
+const observer = new IntersectionObserver(
+  ([entry]) => {
+    setIsSticky(!entry.isIntersecting);
+  },
+  {
+    threshold: 1,
+  }
+);
+```
+
+## PORCENTAJE DE VISIBILIDAD HACIENDO USO DE THRESHOLD + ROOTMARGIN PARA SER MAS PRECISOS EN EL PORCENTAJE
+
+- Entonces, como threshold solo acepta este rango de visibilidad porcentual sobre el viewport [0,0.5,1]
+  Si queremos afinar más y en pixel, con más exactitud, en plan exactamente cuando le queden 30 pixel, pues en ese caso hay que usar threshold con rootMargin
+
+- Entonces: con threshold:0 activo sticky cuando salga por completo del viewport el container sentinel
+  Pero si quiero que el sticky se active 15 pixel antes de que salga del viewport sentinel (height de sentinel
+  tendría que ser > 15px), uso threshold:0 con rootMargin negativo -15PX
+
+```jsx
+const observer = new IntersectionObserver(
+  ([entry]) => {
+    setIsSticky(!entry.isIntersecting);
+  },
+  {
+    threshold: 0,
+    rootMargin: "0px 0px -15px 0px",
+  }
+);
+```
