@@ -2,6 +2,10 @@
 
 ## Instalación de la libreria: npm install react-icons
 
+## Instalación del node modules: npm install
+
+## Ejecución sobre vite: npm run dev
+
 ## Modo no hamburguesa:
 
 - el button hamburguesa es un flex item de mi header escondido:
