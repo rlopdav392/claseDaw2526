@@ -70,10 +70,9 @@ transform: translateX(100%);
 }
 ```
 
-## Modo hamburguesa en estado open - Sabre que esta en estado open,
+## Modo hamburguesa en estado open
 
-- cuando mi container nav tambien tenga la clase navOpen, en ese momento tengo que regresar a su posición original el
-  container nav (transform: translateX(0)), que lo había sacado fuera del viewport y mostrarlo
+- Sabre que esta en estado open cuando mi container nav tambien tenga la clase navOpen, en ese momento tengo que regresar a su posición original el container nav (transform: translateX(0)), que lo había sacado fuera del viewport y mostrarlo
 
 ```css &.navOpen {
   opacity: 1;
