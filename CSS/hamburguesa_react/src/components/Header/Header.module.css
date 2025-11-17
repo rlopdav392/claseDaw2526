@@ -12,23 +12,22 @@
   height: 2.2rem;
 }
 
-.mainNavList {
+.navList {
   list-style: none;
   display: flex;
   gap: 3.2rem;
   align-items: center;
-}
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
 
-.mainNavList a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 1.8rem;
-  transition: all 0.3s;
-}
-
-.mainNavList a:hover {
-  color: #cf711f;
+  a:hover {
+    color: #cf711f;
+  }
 }
 
 .navCta {
@@ -36,64 +35,62 @@
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
+  &:hover {
+    background-color: #cf711f;
+  }
 }
 
-.navCta:hover {
-  background-color: #cf711f;
-}
-
-/* MOBILE BUTTON */
 .btnMobileNav {
   border: none;
   background: none;
   cursor: pointer;
   display: none;
+  .iconMobileNav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+  }
 }
 
-.iconMobileNav {
-  height: 4.8rem;
-  width: 4.8rem;
-  color: #333;
-}
+@media (max-width: 60rem) {
+  .btnMobileNav {
+    display: block;
+    z-index: 1000;
+  }
 
-/* RESPONSIVE NAVIGATION */
-@media (max-width: 60rem) .btnMobileNav {
-  display: block;
-  z-index: 1000;
-}
+  .nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-.mainNav {
-  background-color: rgba(255, 255, 255, 0.97);
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
 
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transition: all 0.5s ease-in;
-  transform: translateX(100%);
-}
+    .navList {
+      flex-direction: column;
+      gap: 4.8rem;
+    }
 
-.navOpen .mainNav {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-  transform: translateX(0);
-}
+    a {
+      font-size: 3rem;
+    }
 
-.mainNavList {
-  flex-direction: column;
-  gap: 4.8rem;
-}
-
-.mainNavList a {
-  font-size: 3rem;
+    &.navOpen {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
 }

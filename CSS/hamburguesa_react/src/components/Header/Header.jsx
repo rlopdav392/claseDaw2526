@@ -9,13 +9,13 @@ export default function Header() {
   const toggleNav = () => setNavOpen((prev) => !prev);
 
   return (
-    <header className={`${styles.header} ${navOpen && styles.navOpen}`}>
+    <header className={styles.header}>
       <a href="#">
         <img src={logo} alt="Omnifood logo" className={styles.logo} />
       </a>
 
-      <nav className={styles.mainNav}>
-        <ul className={styles.mainNavList}>
+      <nav className={`${styles.nav} ${navOpen && styles.navOpen}`}>
+        <ul className={styles.navList}>
           <li>
             <a href="#">How it works</a>
           </li>
