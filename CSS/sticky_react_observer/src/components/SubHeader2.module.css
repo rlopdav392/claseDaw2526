@@ -1,0 +1,12 @@
+.subHeader2 {
+  width: 100%;
+  background: #facc15;
+  padding: 10px;
+  text-align: center;
+}
+
+.subHeader2Sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}

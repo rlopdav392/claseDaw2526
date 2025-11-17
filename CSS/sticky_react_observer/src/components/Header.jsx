@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Header.module.css";
+import SubHeader1 from "./SubHeader1";
+import SubHeader2 from "./SubHeader2";
 
 export default function Header() {
-  const stickyRef = useRef(null);
   const sentinelRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -25,12 +26,7 @@ export default function Header() {
 
       <div ref={sentinelRef} className={styles.sentinel}></div>
 
-      <div
-        ref={stickyRef}
-        className={`${styles.movida} ${isSticky && styles.movidaSticky}`}
-      >
-        Movida Element
-      </div>
+      {isSticky ? <SubHeader2 /> : <SubHeader1 />}
     </header>
   );
 }

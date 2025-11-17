@@ -19,16 +19,3 @@
   opacity: 0;
   pointer-events: none;
 }
-
-.movida {
-  width: 100%;
-  background: #facc15;
-  padding: 10px;
-  text-align: center;
-}
-
-.movidaSticky {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
