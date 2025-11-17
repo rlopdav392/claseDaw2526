@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de clamp()</title>
+    <style>
+      .clamp-box {
+        /* Tamaño de fuente responsive */
+        font-size: clamp(1rem, 5vw, 2rem);
+
+        /* Ancho responsive */
+        width: clamp(200px, 50vw, 600px);
+
+        /* Padding responsive */
+        padding: clamp(8px, 2vw, 24px);
+
+        /* Margen izquierdo responsive */
+        margin-left: clamp(0.5rem, 3vw, 2rem);
+
+        /* Bordes redondeados responsivos */
+        border-radius: clamp(4px, 2vw, 40px);
+
+        /* Otros estilos */
+        background-color: lightblue;
+        color: darkblue;
+        text-align: center;
+        border: 2px solid darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clamp-box">
+      Este es un ejemplo de <strong>clamp()</strong> responsive.
+    </div>
+  </body>
+</html>

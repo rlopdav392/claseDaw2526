@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content-based sizing</title>
+    <style>
+      .box {
+        border: 2px solid #333;
+        margin: 10px;
+        padding: 8px;
+        font-size: 16px;
+        display: inline-block;
+      }
+
+      .min-content {
+        width: min-content;
+        background-color: #f9c2ff;
+      }
+
+      .fit-content {
+        width: fit-content;
+        background-color: #c2f9ff;
+      }
+
+      .max-content {
+        width: max-content;
+        background-color: #c2ffc2;
+      }
+
+      .container {
+        width: 300px;
+        border: 1px dashed #666;
+        padding: 5px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Content-based sizing</h2>
+
+    <div class="container">
+      <div class="box min-content">Este es un ejemplo de min-content</div>
+    </div>
+
+    <div class="container">
+      <div class="box fit-content">Este es un ejemplo de fit-content</div>
+    </div>
+
+    <div class="container">
+      <div class="box max-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam libero
+        veniam rem labore officiis voluptates at amet atque voluptate, excepturi
+        explicabo reiciendis, itaque, non nostrum accusamus tempora saepe nihil
+        odit!
+      </div>
+    </div>
+  </body>
+</html>

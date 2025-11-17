@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min/Max Sizes</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+
+      .container {
+        width: 90%;
+        border: 1px dashed #333;
+        margin: 20px auto;
+        padding: 10px;
+      }
+
+      /* Caja con min-width y max-width */
+      .box-width {
+        min-width: 200px; /* nunca menor a 200px */
+        max-width: 400px; /* nunca mayor a 400px */
+        width: 50%; /* valor base relativo al contenedor */
+        background-color: lightblue;
+        padding: 20px;
+        margin: 10px auto;
+        text-align: center;
+        border: 2px solid blue;
+      }
+
+      /* Caja con min-height y max-height */
+      .box-height {
+        min-height: 100px; /* nunca menor a 100px */
+        max-height: 250px; /* nunca mayor a 250px */
+        height: 50vh; /* valor base relativo al viewport */
+        background-color: lightgreen;
+        padding: 20px;
+        margin: 10px auto;
+        text-align: center;
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Min / Max Width</h2>
+    <div class="container">
+      <div class="box-width">
+        min-width: 200px, max-width: 400px, width: 50%
+      </div>
+    </div>
+
+    <h2>Min / Max Height</h2>
+    <div class="container">
+      <div class="box-height">
+        min-height: 100px, max-height: 250px, height: 50vh
+      </div>
+    </div>
+
+    <p>
+      Redimensiona la ventana para ver cómo se limitan los tamaños mínimo y
+      máximo.
+    </p>
+  </body>
+</html>

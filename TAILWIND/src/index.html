@@ -5,14 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body
+    class="bg-linear-to-tr from-slate-600 to-slate-300 bg-no-repeat bg-[url('https://cdn.pixabay.com/photo/2025/10/16/08/14/parrot-9897724_1280.jpg')] bg-cover bg-center min-h-screen"
+  >
     <h1 class="text-3xl text-red-500 font-bold underline">
       Mi primero proyecto de tailwind CSS
     </h1>
-    <p class="text-red-800/25 text-xs text-right tracking-wider font-oswald">
+    <p class="text-red-800/25 text-xs text-right tracking-wider font-serif">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident at
       magnam maiores, quos soluta aliquam neque earum delectus sint cum esse qui
       obcaecati nam id fugit ex, dolore fugiat! Placeat.
     </p>
+    <p class="text-[rgb(255,77,77)]">Texto rojo con rgb</p>
+    <p class="text-[#ff4d4d]">Este texto es rojo personalizado</p>
+    <p class="text-(--mi-rojo)">Texto custom red</p>
+    <p class="text-mi-rojo">Texto custom rojo</p>
+    <p class="text-roro">Texto custom rojo</p>
+
+    <p class="font-oswald">Texto con Oswald</p>
+    <p class="font-['Oswald',sans-serif]">Texto con Oswald</p>
+    <p class="font-(family-name:--variable-oswald)">Texto con Oswald</p>
+
+    <section
+      class="text-slate-900 text-2xl tracking-widest font-oswald bg-slate-50/70 h-90 w-80 mt-80 p-8"
+    >
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum at
+      voluptatem laborum, cum delectus, officia labore molestiae saepe tempora
+      vitae quasi pariatur hic exercitationem nulla quia sit! Laborum, animi
+      repellendus?
+    </section>
+    <section class="h-[150px]">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, dolor non
+      nobis architecto neque deserunt consequuntur saepe perferendis voluptate
+      iste, eum fugit molestiae ipsa pariatur vero? Eveniet repellat provident
+      dolores.
+    </section>
   </body>
 </html>

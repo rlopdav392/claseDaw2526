@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+:root {
+  --variable-oswald: "Oswald", sans-serif;
+  --mi-rojo: #ff944d;
+}
+
 @theme {
   --font-oswald: "Oswald";
+  --color-roro: #ff944d;
+}
+
+.text-mi-rojo {
+  color: var(--mi-rojo);
 }
