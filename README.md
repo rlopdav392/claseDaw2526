@@ -32,4 +32,4 @@ Teniendo en cuenta que el miércoles 10 de junio tienen que estar puestas las no
 - Fecha de exposición: lunes 8 de junio (08/06/2025)
 
 ## Cuadrante horario de las exposiciones:
-- Se hará un cuadrante donde se partirá la tarde en intervalos de 15 minutos, donde se os asignará un intervalo a cada uno, 10 minutos de exposición y 5 de dudas.
+- Se hará un cuadrante donde se partirá la tarde en intervalos de 15 minutos, donde se os asignará un intervalo a cada uno, 10 minutos de exposición y 5 de preguntas por parte del profesorado.
