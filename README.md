@@ -28,8 +28,8 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - Anteproyecto: lunes 19 de enero (19/01/2026)
 - Seguimientos: Semanal o quincenal, me adapto a vosotros.
 Teniendo en cuenta que el miércoles 10 de junio tienen que estar puestas las notas, pues la primera semana de junio debería ser la entrega y exposición, yo propongo lo siguiente.
-- Fecha de entrega: viernes 5 de junio (05/06/2025)
-- Fecha de exposición: lunes 8 de junio (08/06/2025)
+- Fecha de entrega: viernes 5 de junio (05/06/2025) PTE REVISIÓN POR EL EQUIPO DOCENTE
+- Fecha de exposición: lunes 8 de junio (08/06/2025) PTE REVISIÓN POR EL EQUIPO DOCENTE
 
 ## Cuadrante horario de las exposiciones:
 - Se hará un cuadrante donde se partirá la tarde en intervalos de 15 minutos, donde se os asignará un intervalo a cada uno, 10 minutos de exposición y 5 de preguntas por parte del profesorado.
