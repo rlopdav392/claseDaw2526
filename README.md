@@ -1,5 +1,5 @@
 # Proyectos Final de Ciclo de 2º DAW
-## curso 2025|26
+## Curso 2025|26
 En este repositorio se encuentra centralizada toda la información relativa a los Proyectos de Desarrollo de Aplicaciones Web del IES Juan de la Cierva (proyectos de fin de ciclo), en la convocatoria del curso 2025|26.
 
 ## Requisitos y criterios a seguir
