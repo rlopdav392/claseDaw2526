@@ -23,13 +23,33 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - Cristian Sánchez Lagos
 - [Sergio Sarmiento Moreno](https://github.com/ssarmor0101/tfgDaw2)
 
-## Fechas a tener en cuenta PTE REVISIÓN POR EL EQUIPO DOCENTE
+## Fechas a tener en cuenta 
 
 - Anteproyecto: lunes 19 de enero (19/01/2026)
 - Seguimientos: Semanal o quincenal, me adapto a vosotros.
-- Teniendo en cuenta que el miércoles 10 de junio tienen que estar puestas las notas, pues la primera semana de junio debería ser la entrega y exposición, yo propongo lo siguiente:
-- Fecha de entrega: viernes 5 de junio (05/06/2025) 
-- Fecha de exposición: lunes 8 de junio (08/06/2025) 
+- Fechas de entrega/exposición pueden sufrir cambios, por otros fechas a las que están supeditadas.
+- Fecha de entrega: Lunes 1 de junio (01/06/2025) 
+- Fecha de exposición: Martes 2 de junio (02/06/2025) 
 
-## Cuadrante horario de las exposiciones: PTE REVISIÓN POR EL EQUIPO DOCENTE
-- Se hará un cuadrante donde se partirá la tarde en intervalos de 15 minutos, donde se os asignará un intervalo a cada uno, 10 minutos de exposición y 5 de preguntas por parte del profesorado.
+## Cuadrante horario de las exposiciones: 
+- Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de preguntas por parte del profesorado.
+
+  | Hora inicio | Hora fin | Alumno |
+|------------|----------|--------|
+| 15:30 | 15:45 | El Arbi Addya Daoui |
+| 15:50 | 16:05 | Fernando Castro Martínez |
+| 16:10 | 16:25 | Sebastián Díaz López |
+| 16:30 | 16:45 | José María Fernández Alonso |
+| 16:50 | 17:05 | Andrés Heredia Sánchez |
+| 17:10 | 17:25 | Ángel Hijano Zato |
+| 17:30 | 17:45 | Nicolás Navarrete Ríos |
+| 17:50 | 18:05 | Iván Darío Parra Iglesias |
+| 18:10 | 18:25 | Javier Ponce Pérez |
+| 18:30 | 18:45 | Antonio Gabriel Portillo Campos |
+| 18:50 | 19:05 | José Ángel Rojas Moreno |
+| 19:10 | 19:25 | José Carlos Ruiz Frías |
+| 19:30 | 19:45 | David Ruiz Manuel |
+| 19:50 | 20:05 | Lucía Salido López |
+| 20:10 | 20:25 | Cristian Sánchez Lagos |
+| 20:30 | 20:45 | Sergio Sarmiento Moreno |
+
