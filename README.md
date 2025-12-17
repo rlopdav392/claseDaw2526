@@ -27,9 +27,10 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 
 - Anteproyecto: lunes 19 de enero (19/01/2026)
 - Seguimientos: Semanal o quincenal, me adapto a vosotros.
-- Fechas de entrega/exposición pueden sufrir cambios, por otros fechas a las que están supeditadas.
-- Fecha de entrega: Lunes 1 de junio (01/06/2025) 
-- Fecha de exposición: Martes 2 de junio (02/06/2025) 
+- Fechas de entrega/exposición pueden sufrir cambios, por otros fechas a las que están supeditadas:
+**- Fecha de entrega: Lunes 1 de junio (01/06/2025)**  
+**- Fecha de exposición: Martes 2 de junio (02/06/2025)**
+
 
 ## Cuadrante horario de las exposiciones: 
 - Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de preguntas por parte del profesorado.
