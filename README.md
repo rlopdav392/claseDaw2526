@@ -34,7 +34,7 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 
 
 ## Cuadrante horario de las exposiciones: 
-- Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de preguntas por parte del profesorado.
+Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de preguntas por parte del profesorado.
 
 | Hora inicio | Hora fin | Alumno |
 |------------|----------|--------|
