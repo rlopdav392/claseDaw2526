@@ -12,16 +12,16 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - José María Fernández Alonso
 - Andrés Heredia Sánchez
 - Ángel Hijano Zato
-- Nicolás Navarrete Ríos
+- [Nicolás Navarrete Ríos](https://github.com/nnavrio140/TFG-Peluqueria)
 - Iván Darío Parra Iglesias
 - Javier Ponce Pérez
-- Antonio Gabriel Portillo Campos
+- [Antonio Gabriel Portillo Campos](https://github.com/aporcam0410/TFGdaw2)
 - José Ángel Rojas Moreno
 - José Carlos Ruiz Frías
 - David Ruiz Manuel
 - Lucía Salido López
 - Cristian Sánchez Lagos
-- Sergio Sarmiento Moreno
+- [Sergio Sarmiento Moreno](https://github.com/ssarmor0101/tfgDaw2)
 
 ## Fechas a tener en cuenta PTE REVISIÓN POR EL EQUIPO DOCENTE
 
