@@ -14,7 +14,7 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - Ángel Hijano Zato
 - [Nicolás Navarrete Ríos](https://github.com/nnavrio140/TFG-Peluqueria)
 - Iván Darío Parra Iglesias
-- Javier Ponce Pérez
+- [Javier Ponce Pérez](https://github.com/jponper533/TFG)
 - [Antonio Gabriel Portillo Campos](https://github.com/aporcam0410/TFGdaw2)
 - José Ángel Rojas Moreno
 - José Carlos Ruiz Frías
