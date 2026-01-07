@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Sans:wght@400;700&family=Geist+Mono:wght@400;700&display=swap");
+
+@import "tailwindcss";
+
+/*solo extiende colores, tipografía y border-radius*/
+
+:root {
+  --ring: oklch(0.704 0.04 256.788);
+  --background: rgb(232, 225, 225);
+  --foreground: oklch(0.129 0.042 264.695);
+  --font-geist-sans: "Geist Sans", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+}
+.dark {
+  --ring: oklch(21.274% 0.00253 248.167);
+  --background: oklch(35.309% 0.19814 264.95);
+  --foreground: oklch(0.984 0.003 247.858);
+}
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-ring: var(--ring);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @apply outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-mono;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply flex justify-center items-center;
+  }
+}
+
+@layer utilities {
+  .padding-custom {
+    @apply py-3 px-[3.2rem];
+  }
+  .outline-ring-50 {
+    @apply outline outline-2;
+    outline-color: var(--ring) / 50;
+  }
+  .px-3-2 {
+    @apply px-[3.2rem];
+  }
+  .shadow-ring {
+    box-shadow: 0 0 0 3px var(--ring);
+  }
+}
+
+/*3 layers implicitas de tailwind: base => components => utilites*/
+
+/* base (prioridad baja): reseteos globales, tipografia */
+/* componentes (priodidad media, sobreescribe base): componentes reusables 
+Lo infiere por nombres semánticos
+(.btn-primary, .card, .modal)
+components (media prioridad)
+  .btn-primary { ... }
+
+*/
+/* utilites (prioridad alta, sobreescribe components y base): clases utilitarias 
+clases cortas, específicas y repetibles que Tailwind reconoce como utilidades
+utilities (mayor prioridad)
+  .text-shadow { ... }
+  Toda la configuración theme estaría en utilities
+*/
+
+/* Yo prefiero usarlo explicitamente, por claridad, y para forzar que se coloque allí.*/

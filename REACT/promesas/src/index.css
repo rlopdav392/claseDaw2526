@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form input {
+  margin: 5px;
+  padding: 8px;
+}
+
+.list .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: #eee;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 6px 10px;
+  margin-left: 10px;
+}
+
+button.danger {
+  background: red;
+  color: white;
+}

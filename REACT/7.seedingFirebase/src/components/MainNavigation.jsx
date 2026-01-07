@@ -34,6 +34,30 @@ function MainNavigation() {
           <li>
             <Link to="seedingSupabase">Subiendo imágenes a Supabase</Link>
           </li>
+          <li>
+            <Link to="crudAsyncAwait">Crud async await</Link>
+          </li>
+          <li>
+            <Link to="crudSWR">Crud SWR</Link>
+          </li>
+          <li>
+            <Link to="crudReactQuery">Crud ReactQuery</Link>
+          </li>
+
+          <li>
+            <Link to="crudAsyncAwaitCustomHook">
+              Crud async await custom hook
+            </Link>
+          </li>
+
+          <li>
+            <Link to="crudSWRCustomHook">Crud SWR custom hook</Link>
+          </li>
+          <li>
+            <Link to="crudReactQueryCustomHook">
+              Crud React Query custom hook
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

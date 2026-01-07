@@ -26,3 +26,12 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlzdnRrbHJ
 # Base de datos Firebase
 
 Si tu documento ya tiene el id del producto, mejor para buscarlo más optimo
+
+# UseSWR
+
+Mutate para updates optimistas
+Estados automáticos de loading / error / data
+
+# react query
+
+npm install @tanstack/react-query
