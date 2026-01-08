@@ -18,7 +18,7 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - [Antonio Gabriel Portillo Campos](https://github.com/aporcam0410/TFGdaw2)
 - José Ángel Rojas Moreno
 - [José Carlos Ruiz Frías](https://github.com/jruifri583/CAR-HERO)
-- David Ruiz Manuel
+- [David Ruiz Manuel](https://github.com/druiman1608/TravelAi)
 - Lucía Salido López
 - Cristian Sánchez Lagos
 - [Sergio Sarmiento Moreno](https://github.com/ssarmor0101/tfgDaw2)
