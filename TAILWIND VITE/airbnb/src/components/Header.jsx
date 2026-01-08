@@ -35,7 +35,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="flex flex-col gap-2">
+    <header className="w-full flex flex-col gap-2">
       <div ref={firstPlaceholderRef}></div>
 
       <div
@@ -46,7 +46,7 @@ function Header() {
         }`}
         ref={firstRef}
       >
-        <section className="grid grid-cols-[auto_1fr_auto] px-16 py-4 w-screen border-b border-neutral-300 items-center transition-all duration-300">
+        <section className="grid grid-cols-[auto_1fr_auto] px-16 py-4  border-b border-neutral-300 items-center transition-all duration-300">
           <img
             src="static/airbnb-logo.png"
             alt="logo airbnb"
@@ -79,7 +79,6 @@ function Header() {
             <ThemeSwitcher />
           </div>
         </section>
-        {/* Category bar minuto 25 */}
 
         <section className="container-custom transition-all duration-300">
           <div className="padding-custom flex items-center justify-between gap-14">
@@ -100,13 +99,13 @@ function Header() {
                 />
                 <p className="text-xs font-normal">Amazing pool</p>
               </div>
-              <div className="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+              <div className="flex flex-col items-center text-card hover:text-card-hover gap-2">
                 <img
                   src="static/type1.jpeg"
                   alt="Amazing pool"
                   className="h-6 w-6"
                 />
-                <p className="text-xs font-normal">Amazing pool</p>
+                <p className="text-xs font-normal">Amazing pool lalal</p>
               </div>
               <div className="flex flex-col items-center text-gray-400 hover:text-black gap-2">
                 <img

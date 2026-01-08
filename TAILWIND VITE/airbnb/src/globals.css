@@ -7,17 +7,23 @@
 :root {
   --ring: oklch(0.704 0.04 256.788);
   --background: rgb(232, 225, 225);
-  --foreground: oklch(0.129 0.042 264.695);
+  --foreground: rgb(2, 6, 24);
   --font-geist-sans: "Geist Sans", sans-serif;
   --font-geist-mono: "Geist Mono", monospace;
+  --text-card: rgb(156, 163, 175);
+  --text-card-hover: rgb(17, 24, 39);
 }
 .dark {
+  --text-card-hover: rgb(156, 163, 175);
+  --text-card: rgb(17, 24, 39);
   --ring: oklch(21.274% 0.00253 248.167);
   --background: oklch(35.309% 0.19814 264.95);
   --foreground: oklch(0.984 0.003 247.858);
 }
 
 @theme {
+  --color-card: var(--text-card);
+  --color-card-hover: var(--text-card-hover);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-ring: var(--ring);
@@ -30,7 +36,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    @apply outline-ring/50;
+    /*  outline: 1px solid red; */
   }
   body {
     @apply bg-background text-foreground font-mono;
