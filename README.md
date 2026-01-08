@@ -20,7 +20,7 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - [José Carlos Ruiz Frías](https://github.com/jruifri583/CAR-HERO)
 - [David Ruiz Manuel](https://github.com/druiman1608/TravelAi)
 - Lucía Salido López
-- Cristian Sánchez Lagos
+- [Cristian Sánchez Lagos](https://github.com/csanlag861/Loop-TFG)
 - [Sergio Sarmiento Moreno](https://github.com/ssarmor0101/tfgDaw2)
 
 ## Fechas a tener en cuenta 
