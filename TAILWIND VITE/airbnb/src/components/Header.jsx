@@ -99,7 +99,7 @@ function Header() {
                 />
                 <p className="text-xs font-normal">Amazing pool</p>
               </div>
-              <div className="flex flex-col items-center text-card hover:text-card-hover gap-2">
+              <div className="flex flex-col items-center  text-card hover:text-card-hover gap-2">
                 <img
                   src="static/type1.jpeg"
                   alt="Amazing pool"
