@@ -9,7 +9,6 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - El Arbi Addya Daoui
 - [Fernando Castro Martínez](https://github.com/fcasmar807/ElArtesano)
 - [Sebastián Díaz López](https://github.com/sdialop424/tfg/wiki)
-- José María Fernández Alonso
 - Andrés Heredia Sánchez
 - [Ángel Hijano Zato](https://github.com/ahijzat/TFG-2DAW-Libreria)
 - [Nicolás Navarrete Ríos](https://github.com/nnavrio140/TFG-Peluqueria)
@@ -19,7 +18,7 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - José Ángel Rojas Moreno
 - [José Carlos Ruiz Frías](https://github.com/jruifri583/CAR-HERO)
 - [David Ruiz Manuel](https://github.com/druiman1608/TravelAi)
-- Lucía Salido López
+- [Lucía Salido López](https://github.com/lsallop3012/DAW-TFG)
 - [Cristian Sánchez Lagos](https://github.com/csanlag861/Loop-TFG)
 - [Sergio Sarmiento Moreno](https://github.com/ssarmor0101/tfgDaw2)
 
@@ -41,17 +40,16 @@ Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de pregunt
 | 15:30 | 15:45 | El Arbi Addya Daoui |
 | 15:50 | 16:05 | Fernando Castro Martínez |
 | 16:10 | 16:25 | Sebastián Díaz López |
-| 16:30 | 16:45 | José María Fernández Alonso |
-| 16:50 | 17:05 | Andrés Heredia Sánchez |
-| 17:10 | 17:25 | Ángel Hijano Zato |
-| 17:30 | 17:45 | Nicolás Navarrete Ríos |
-| 17:50 | 18:05 | Iván Darío Parra Iglesias |
-| 18:10 | 18:25 | Javier Ponce Pérez |
-| 18:30 | 18:45 | Antonio Gabriel Portillo Campos |
-| 18:50 | 19:05 | José Ángel Rojas Moreno |
-| 19:10 | 19:25 | José Carlos Ruiz Frías |
-| 19:30 | 19:45 | David Ruiz Manuel |
-| 19:50 | 20:05 | Lucía Salido López |
-| 20:10 | 20:25 | Cristian Sánchez Lagos |
-| 20:30 | 20:45 | Sergio Sarmiento Moreno |
+| 16:30 | 16:45 | Andrés Heredia Sánchez |
+| 16:50 | 17:05 | Ángel Hijano Zato |
+| 17:10 | 17:25 | Nicolás Navarrete Ríos |
+| 17:30 | 17:45 | Iván Darío Parra Iglesias |
+| 17:50 | 18:05 | Javier Ponce Pérez |
+| 18:10 | 18:25 | Antonio Gabriel Portillo Campos |
+| 18:30 | 18:45 | José Ángel Rojas Moreno |
+| 18:50 | 19:05 | José Carlos Ruiz Frías |
+| 19:10 | 19:25 | David Ruiz Manuel |
+| 19:30 | 19:45 | Lucía Salido López |
+| 19:50 | 20:05 | Cristian Sánchez Lagos |
+| 20:10 | 20:25 | Sergio Sarmiento Moreno |
 
