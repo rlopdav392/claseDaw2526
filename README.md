@@ -7,7 +7,7 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 
 ## Índice a los proyectos de cada alumno
 - El Arbi Addya Daoui
-- Fernando Castro Martínez
+- [Fernando Castro Martínez](https://github.com/fcasmar807/ElArtesano)
 - Sebastián Díaz López
 - José María Fernández Alonso
 - Andrés Heredia Sánchez
