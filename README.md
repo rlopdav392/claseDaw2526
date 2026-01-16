@@ -13,7 +13,7 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - Andrés Heredia Sánchez
 - [Ángel Hijano Zato](https://github.com/ahijzat/TFG-2DAW-Libreria)
 - [Nicolás Navarrete Ríos](https://github.com/nnavrio140/TFG-Peluqueria)
-- Iván Darío Parra Iglesias
+- [Iván Darío Parra Iglesias](https://github.com/Iparigl784/tfgDaw/wiki/1.%E2%80%90-Presentaci%C3%B3n-del-proyecto)
 - [Javier Ponce Pérez](https://github.com/jponper533/TFG)
 - [Antonio Gabriel Portillo Campos](https://github.com/aporcam0410/TFGdaw2)
 - José Ángel Rojas Moreno
