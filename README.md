@@ -11,7 +11,7 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - [Sebastián Díaz López](https://github.com/sdialop424/tfg/wiki)
 - José María Fernández Alonso
 - Andrés Heredia Sánchez
-- Ángel Hijano Zato
+- [Ángel Hijano Zato](https://github.com/ahijzat/TFG-2DAW-Libreria)
 - [Nicolás Navarrete Ríos](https://github.com/nnavrio140/TFG-Peluqueria)
 - Iván Darío Parra Iglesias
 - [Javier Ponce Pérez](https://github.com/jponper533/TFG)
