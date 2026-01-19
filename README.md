@@ -15,7 +15,7 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - [Iván Darío Parra Iglesias](https://github.com/Iparigl784/tfgDaw/wiki/1.%E2%80%90-Presentaci%C3%B3n-del-proyecto)
 - [Javier Ponce Pérez](https://github.com/jponper533/TFG)
 - [Antonio Gabriel Portillo Campos](https://github.com/aporcam0410/TFGdaw2)
-- José Ángel Rojas Moreno
+- [José Ángel Rojas Moreno](https://github.com/Jrojmor2903/TFG-DAW2)
 - [José Carlos Ruiz Frías](https://github.com/jruifri583/CAR-HERO)
 - [David Ruiz Manuel](https://github.com/druiman1608/TravelAi)
 - [Lucía Salido López](https://github.com/lsallop3012/DAW-TFG)
