@@ -4,7 +4,9 @@ En este repositorio se encuentra centralizada toda la información relativa a lo
 
 ## Requisitos y criterios a seguir
 Tanto los criterios generales como los criterios particulares por cada módulo se encuentran en la [Wiki de este repositorio](https://github.com/rlopdav392/claseDaw2526/wiki/01%E2%80%90Normativa-del-proyecto)
+
 Así mismo, se ha añadido la siguiente documentación, como ideas para incorporar a vuestro proyecto:
+
 - [Ideas de librerías a usar](https://github.com/rlopdav392/claseDaw2526/wiki/02%E2%80%90Librerias-TFG)
 - [Repos de otros años para tenerlos como referencia](https://github.com/rlopdav392/claseDaw2526/wiki/03%E2%80%90Repos-de-otros-a%C3%B1os)
    - Esto es muy útil,  ya que, gracias a la IA, podéis decirle por ejemplo al copilot, dime de este repo, explicame la parte del código correspondiente a la autenticación, lo que quiere decir, que hoy en día los códigos de otras personas no son cajas negras, tenemos a la IA, para que nos de un acceso directo al código de la funcionalidad que estamos buscando, y con una explicación detallada.
