@@ -4,6 +4,20 @@ En este repositorio se encuentra centralizada toda la información relativa a lo
 
 ## Requisitos y criterios a seguir
 Tanto los criterios generales como los criterios particulares por cada módulo se encuentran en la [Wiki de este repositorio](https://github.com/rlopdav392/claseDaw2526/wiki/01%E2%80%90Normativa-del-proyecto)
+Así mismo, se ha añadido la siguiente documentación, como ideas para incorporar a vuestro proyecto:
+- [Ideas de librerías a usar](https://github.com/rlopdav392/claseDaw2526/wiki/02%E2%80%90Librerias-TFG)
+- [Repos de otros años para tenerlos como referencia](https://github.com/rlopdav392/claseDaw2526/wiki/02%E2%80%90Librerias-TFG)
+   Esto es muy útil,  ya que, gracias a la IA, podéis decirle por ejemplo al copilot, dime de este repo, explicame la parte del código correspondiente a la autenticación, lo que quiere decir, que hoy en día los códigos de otras personas no son cajas negras, tenemos a la IA, para que nos de un acceso directo al código de la funcionalidad que estamos buscando, y con una explicación detallada.
+- [Una vez hechos los requisitos mínomos del proyectos, posibles ideas de ampliación](https://github.com/rlopdav392/claseDaw2526/wiki/04%E2%80%90Embelleciendo-nuestro-proyecto)
+- [Ideas para aplicar a vuestro UI en aras de mejorar la experiencia de usaurio](https://github.com/rlopdav392/claseDaw2526/wiki/05%E2%80%90Mejorando-la-experiencia-de-usuario)
+- [Cómo hacer las llamadas a los endpoint desde el frontend de la manera más escalable posible](https://github.com/rlopdav392/claseDaw2526/wiki/05%E2%80%90Mejorando-la-experiencia-de-usuario)
+- [Ejemplo de promesas con token bearer en header, para cuando accedamos a rutas protegidas en backend](https://github.com/rlopdav392/claseDaw2526/wiki/07%E2%80%90Gesti%C3%B3n-del-token-bearer)
+- [Cómo convertir una estrutura table de un crud en resolución desktop en responsive para una resolución mobile](https://github.com/rlopdav392/claseDaw2526/wiki/08%E2%80%90Propuesta-de-versi%C3%B3n-CRUD-Responsive)
+- [Movidas random](https://github.com/rlopdav392/claseDaw2526/wiki/09%E2%80%90Movidas-random)
+   - Ejecución concurrente / transacciones tanto desde las promesas del frontend como desde las querys de ORM
+   - Cursor based pagination como técnica a usar en las paginaciones
+   - ORM: uso de take y skip en pagination
+   - ORM uso de upsert en las operaciones de create-update de los crud
 
 ## Índice a los proyectos de cada alumno
 - El Arbi Addya Daoui
