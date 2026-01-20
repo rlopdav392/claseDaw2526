@@ -20,7 +20,9 @@ Así mismo, se ha añadido la siguiente documentación, como ideas para incorpor
    - Cursor based pagination como técnica a usar en las paginaciones
    - ORM: uso de take y skip en pagination
    - ORM uso de upsert en las operaciones de create-update de los crud
-
+-[Filosofando con React](https://github.com/rlopdav392/claseDaw2526/wiki/10%E2%80%90Filosofando-con-React)
+   - Uso de estados en los formularios para agarrar el valor del input y no a través de e.target.value
+     
 ## Índice a los proyectos de cada alumno
 - El Arbi Addya Daoui
 - [Fernando Castro Martínez](https://github.com/fcasmar807/ElArtesano)
