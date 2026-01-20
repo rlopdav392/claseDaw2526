@@ -10,7 +10,7 @@ Así mismo, se ha añadido la siguiente documentación, como ideas para incorpor
    Esto es muy útil,  ya que, gracias a la IA, podéis decirle por ejemplo al copilot, dime de este repo, explicame la parte del código correspondiente a la autenticación, lo que quiere decir, que hoy en día los códigos de otras personas no son cajas negras, tenemos a la IA, para que nos de un acceso directo al código de la funcionalidad que estamos buscando, y con una explicación detallada.
 - [Una vez hechos los requisitos mínomos del proyectos, posibles ideas de ampliación](https://github.com/rlopdav392/claseDaw2526/wiki/04%E2%80%90Embelleciendo-nuestro-proyecto)
 - [Ideas para aplicar a vuestro UI en aras de mejorar la experiencia de usaurio](https://github.com/rlopdav392/claseDaw2526/wiki/05%E2%80%90Mejorando-la-experiencia-de-usuario)
-- [Cómo hacer las llamadas a los endpoint desde el frontend de la manera más escalable posible](https://github.com/rlopdav392/claseDaw2526/wiki/05%E2%80%90Mejorando-la-experiencia-de-usuario)
+- [Cómo hacer las llamadas a los endpoint desde el frontend de la manera más escalable posible](https://github.com/rlopdav392/claseDaw2526/wiki/06%E2%80%90Centralizaci%C3%B3n-de-los-endpoints)
 - [Ejemplo de promesas con token bearer en header, para cuando accedamos a rutas protegidas en backend](https://github.com/rlopdav392/claseDaw2526/wiki/07%E2%80%90Gesti%C3%B3n-del-token-bearer)
 - [Cómo convertir una estrutura table de un crud en resolución desktop en responsive para una resolución mobile](https://github.com/rlopdav392/claseDaw2526/wiki/08%E2%80%90Propuesta-de-versi%C3%B3n-CRUD-Responsive)
 - [Movidas random](https://github.com/rlopdav392/claseDaw2526/wiki/09%E2%80%90Movidas-random)
