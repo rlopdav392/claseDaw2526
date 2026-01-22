@@ -25,7 +25,7 @@ Así mismo, se ha añadido la siguiente documentación, como ideas para incorpor
    - Uso de estados en los formularios para agarrar el valor del input y no a través de e.target.value
      
 ## Índice a los proyectos de cada alumno
-- El Arbi Addya Daoui
+- [El Arbi Addya Daoui](https://github.com/Elarbiaddya/detailling_mope)
 - [Fernando Castro Martínez](https://github.com/fcasmar807/ElArtesano)
 - [Sebastián Díaz López](https://github.com/sdialop424/tfg/wiki)
 - Andrés Heredia Sánchez
