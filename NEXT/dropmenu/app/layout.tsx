@@ -1,10 +1,6 @@
 import "./globals.css";
-import type { Metadata } from "next";
+
 import { Toaster } from "@/components/ui/sonner";
-export const metadata: Metadata = {
-  title: "Aplicación de tickets",
-  description: "pues eso movidas de tickets",
-};
 
 export default function RootLayout({
   children,
