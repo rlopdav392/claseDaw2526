@@ -12,15 +12,16 @@ import {
 import { Button } from "@/components/ui/button";
 import { LucideMoreVertical } from "lucide-react";
 
-import { useConfirmDialog } from "@/components/confirm-dialog";
+import { ConfirmDialog } from "@/components/confirm-dialog";
 import { deleteTicket } from "../actions/delete-ticket";
 import { LucideTrash } from "lucide-react";
-
+import { useRouter } from "next/navigation";
 import Link from "next/link";
-
+import { useActionState, useEffect, useState } from "react";
 import { LucidePencil } from "lucide-react";
 import type { Ticket } from "../data/tickets";
-
+import { toast } from "sonner";
+import { UpdateTicketStatus } from "../actions/update-ticket";
 type TicketMoreMenuProps = {
   ticket: Ticket;
 };
@@ -28,22 +29,43 @@ type TicketMoreMenuProps = {
 const ticketEditPath = (ticketId: string) => `/tickets/${ticketId}/edit`;
 
 const TicketMoreMenu = ({ ticket }: TicketMoreMenuProps) => {
-  const [deleteButton, deleteDialog] = useConfirmDialog({
-    action: deleteTicket.bind(null, ticket.id),
-    trigger: (
-      <DropdownMenuItem>
-        <LucideTrash className="h-4 w-4"></LucideTrash>
-        <span>Delete</span>
-      </DropdownMenuItem>
-    ),
-  });
+  const router = useRouter();
+  const [isDeleteOpen, setIsDeleteOpen] = useState(false);
+  const [deleteState, deleteFormAction] = useActionState(
+    deleteTicket.bind(null, ticket.id),
+    { status: "IDLE", message: "", timestamp: 0 },
+  );
+
+  useEffect(() => {
+    if (deleteState.status === "ERROR") {
+      toast.error(deleteState.message);
+    }
+    if (deleteState.status === "SUCCESS") {
+      console.log("sucess");
+      toast.success(deleteState.message);
+      router.refresh();
+    }
+  }, [deleteState.timestamp]);
+
   const handleUpdateTicketStatus = async (value: string) => {
-    console.log("actualizando estado", value);
+    const promise = UpdateTicketStatus(ticket.id, value);
+    toast.promise(promise, { loading: "updating status..." });
+    const result = await promise;
+
+    if (result.status === "ERROR") toast.error(result.message);
+    if (result.status === "SUCCESS") toast.success(result.message);
   };
 
   return (
     <>
-      {deleteDialog}
+      <ConfirmDialog
+        open={isDeleteOpen}
+        onOpenChange={setIsDeleteOpen}
+        title="Delete ticket?"
+        description="This action cannot be undone."
+        formAction={deleteFormAction}
+        confirmLabel="Confirm"
+      />
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="icon">
@@ -62,7 +84,10 @@ const TicketMoreMenu = ({ ticket }: TicketMoreMenuProps) => {
           </DropdownMenuItem>
 
           <DropdownMenuSeparator />
-          {deleteButton}
+          <DropdownMenuItem onSelect={() => setIsDeleteOpen(true)}>
+            <LucideTrash className="h-4 w-4" />
+            <span>Delete</span>
+          </DropdownMenuItem>
 
           <DropdownMenuSeparator />
           <DropdownMenuRadioGroup

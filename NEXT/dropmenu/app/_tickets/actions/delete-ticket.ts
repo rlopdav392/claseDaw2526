@@ -1,10 +1,5 @@
 "use server";
 
-import { redirect } from "next/navigation";
-import { ticketsPath } from "@/paths";
-import { revalidatePath } from "next/cache";
-import { setCookieByKey } from "@/actions/cookies";
-
 type ActionState = {
   status?: "IDLE" | "SUCCESS" | "ERROR";
   message: string;
@@ -14,9 +9,12 @@ type ActionState = {
 };
 export const deleteTicket = async (id: string): Promise<ActionState> => {
   try {
+    /* Aqui borraría el ticket 
     if (id) {
-      //TODO: Obtengo el ticket a borrar de la base de datos, y compruebo que exista y que es el propietario
-      /*
+      const ticket = await prisma.ticket.findUnique({ where: { id } });
+
+      const istIcketOwner = user?.id === ticket?.userId;
+
       if (!istIcketOwner || !ticket) {
         return {
           status: "ERROR",
@@ -25,24 +23,19 @@ export const deleteTicket = async (id: string): Promise<ActionState> => {
         };
       }
     }
-          await prisma.ticket.delete({ where: { id } });
-      */
-      await new Promise((resolve) => setTimeout(resolve, 300));
-    }
+
+    await prisma.ticket.delete({ where: { id } });
+*/
+    console.log("borrando id", id);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    return {
+      status: "SUCCESS",
+      message: "Ticket deleted",
+      timestamp: Date.now(),
+    };
   } catch (error) {
-    if (error instanceof Error) {
-      return {
-        status: "ERROR",
-        message: error.message,
-      } as ActionState;
-    } else {
-      return {
-        status: "ERROR",
-        message: "something went wrong",
-      } as ActionState;
-    }
+    const message =
+      error instanceof Error ? error.message : "something went wrong";
+    return { status: "ERROR", message, timestamp: Date.now() };
   }
-  revalidatePath(ticketsPath());
-  await setCookieByKey("toast", "Ticket deleted");
-  redirect(ticketsPath());
 };

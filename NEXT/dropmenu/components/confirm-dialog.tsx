@@ -8,51 +8,29 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import { useState, useActionState, useEffect } from "react";
+
 import { SubmitButton } from "./form/submit-button";
-import { toast } from "sonner";
-import { cloneElement } from "react";
 
-type ActionState = {
-  status?: "IDLE" | "SUCCESS" | "ERROR";
-  message: string;
-  payload?: FormData;
-  fieldErrors?: Record<string, string[] | undefined>;
-};
-
-type useConfirmDialog = {
+type ConfirmDialogProps = {
   title?: string;
   description?: string;
-  action: () => Promise<ActionState>;
-  trigger: React.ReactElement;
+  confirmLabel?: string;
+  formAction: (formData: FormData) => void;
+
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
 };
-const useConfirmDialog = ({
+const ConfirmDialog = ({
   title = "Are you absolutely sure?",
   description = "This action cannot be undone. This will permanently delete your account and remove your data from our servers.",
-  action,
-  trigger,
-}: useConfirmDialog) => {
-  const [actionState, formAction] = useActionState(action, {
-    status: "IDLE",
-    message: "",
-  });
-  const [isOpen, setIsOpen] = useState(false);
-  const dialogTrigger = cloneElement(
-    trigger as React.ReactElement<{ onClick?: () => void }>,
-    {
-      onClick: () => {
-        setIsOpen((state) => !state);
-      },
-    },
-  );
-  useEffect(() => {
-    if (actionState.status === "ERROR") {
-      if (actionState.message) toast.error(actionState.message);
-    }
-  }, [actionState]);
+  confirmLabel = "Confirm",
+  formAction,
 
+  open,
+  onOpenChange,
+}: ConfirmDialogProps) => {
   const dialog = (
-    <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
+    <AlertDialog open={open} onOpenChange={onOpenChange}>
       <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>{title}</AlertDialogTitle>
@@ -62,14 +40,14 @@ const useConfirmDialog = ({
           <AlertDialogCancel>Cancel</AlertDialogCancel>
           <AlertDialogAction asChild>
             <form action={formAction}>
-              <SubmitButton label="Confirm" />
+              <SubmitButton label={confirmLabel} />
             </form>
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
   );
-  return [dialogTrigger, dialog] as const;
+  return dialog;
 };
 
-export { useConfirmDialog };
+export { ConfirmDialog };
