@@ -7,8 +7,7 @@
 - Se ha usado dos patrones diferentes de comunicar el client con el server action y recibir la respuesta del mismo:
   - En el delete, se usa el tipico patrón de formAction con su actionState
   - En el updateStatus se usa una simple promesa
-- Ambos patrones son correctos en este caso, ya que no hay un formulario como tal con validación de campos, si así
-- lo hubiesa obviamente, nada de promesas, tiene que usarse si o si un formAction con ActionState
+- Ambos patrones son correctos en este caso, ya que no hay un formulario como tal con validación de campos, si así lo hubiesa obviamente, nada de promesas, tiene que usarse si o si un formAction con ActionState
 - Así mismo también hay que entender el patrón usado en el dropmenu, que lo explico más abajo, ya que tiene una casuística especial, se trata de un dropmenu con un dialog.
 - y por último, también explico dos posibles formas de renderizar el toast tras el server action (cookie, useEffect sobre timestamp)
 
@@ -25,7 +24,7 @@
 - En un DropdownMenu, cuando haces click en un item:
   - el menú se cierra
   - su DropdownMenuContent se desmonta
-- si tu <AlertDialog> vive dentro de ese DropdownMenuContent, se desmonta también → por eso “se abre y se cierra” o directamente no puedes interactuar.
+- si tu dialogo vive dentro de ese DropdownMenuContent, se desmonta también → por eso “se abre y se cierra” o directamente no puedes interactuar.
 
 ### Modificación del comportamiento para un alertdialog usado sobre un dropmenu
 
@@ -35,5 +34,5 @@
 
 ## OPCIONES QUE HAY PARA DEVOLVER LA RESPUESTA DEL SERVER ACTION AL CLIENT-TOAST
 
-- opción 1 (la que tenemos implementada): client con toast del actionState y refresco con router.refresh y server devuelve el estado de la promesa en un actionState (es la opción que aqui está implementada).
-- opción 2 (me gusta más): cliente sin toast y no hace refresh, es el server el que hace revalidate, guarda el state en una cookie y ya no vuelve al cliente, hace un redirect a la page de listado de tickets, esa page cuando se monte, comprobará si hay algo en cookie y si es así renderizará el toast.
+- opción 1 (la que tenemos implementada): client con toast del actionState.message y refresco con router.refresh y server devuelve el message en un actionstate (es la opción que aqui está implementada).
+- opción 2 (me gusta más, porque se más reusable): cliente sin toast y no hace refresh, es el server el que hace revalidate, guarda el state en una cookie y ya no vuelve al cliente, hace un redirect a la page de listado de tickets, esa page cuando se monte, comprobará si hay algo en cookie y si es así renderizará el toast.
