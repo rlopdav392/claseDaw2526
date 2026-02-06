@@ -81,3 +81,54 @@ const RedirectToast = () => {
 
 export { RedirectToast };
 ```
+
+# 3 PATRONES SERVER PARA COMUNICACIÓN ENTRE CLIENTE <=> SERVER ACTIONS
+
+## Patrón 1: promise directa (imperativo)
+
+- Se llama a server action como una función async normal, sin action state.
+- Para acciones rápidas sin form, que no requieren de validación de campos
+
+```jsx
+const promise = UpdateTicketStatus(id, value);
+
+toast.promise(promise);
+
+const result = await promise;
+toast.success(result.message);
+```
+
+## Patrón 2: formAction + useActionState (sin inputs, por lo tanto sin formData)
+
+- Se llama a server action a través de un actionState, pero sin formData
+- Para acciones rápidas sin form, que no requieren de validación de campos
+
+```jsx
+const [state, formAction] = useActionState(deleteTicket, initial)
+
+<form action={formAction}>
+  <button>Confirm</button>
+</form
+```
+
+## Patrón 3: formAction + useActionState + formData (validación de inputs)
+
+- Se llama a server action a través de un actionState con su formData
+- para formularios con validación de sus inputs
+
+```jsx
+<form action={formAction}>
+  <input name="title" />
+  <input name="content" />
+</form>
+```
+
+# 2 PATRONES UX PARA MOSTRAR TOAST TRAS EL ACTION SERVER
+
+## Toast en el client, no redirect
+
+- server action → devuelve estado a client → client renderiza toast → client hace router.refresh()
+
+## Toast en un layout/template con redirect = patrón Flash message/toast
+
+- server action → guarda mensaje en cookie → server hace revalidate + redirect → layout/template lee cookie y renderiza toast
