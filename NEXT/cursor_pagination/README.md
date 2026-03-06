@@ -2,6 +2,7 @@
 
 - react-intersection-observer para el infinite scroll
 - react query
+- nuq
 
 # Ejecución
 

@@ -1,4 +1,4 @@
-import { getComments } from "@/features/comment/queries/get-comments";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { Comments } from "@/features/comment/components/comments";
 
 export default async function TicketPage({
@@ -6,15 +6,14 @@ export default async function TicketPage({
 }: {
   params: Promise<{ ticketId: string }>;
 }) {
-  const { ticketId } = await params; // 👈 clave
-
-  const firstPage = await getComments(ticketId, undefined);
+  const { ticketId } = await params;
 
   return (
-    <main style={{ maxWidth: 520, margin: "0 auto", padding: 24 }}>
-      <h1 style={{ marginBottom: 12 }}>Ticket {ticketId}</h1>
-
-      <Comments ticketId={ticketId} paginatedComments={firstPage} />
-    </main>
+    <NuqsAdapter>
+      <div className="max-w-[520px] mx-auto w-full py-8">
+        <h1 className="text-2xl font-bold mb-4">Ticket {ticketId}</h1>
+        <Comments ticketId={ticketId} />
+      </div>
+    </NuqsAdapter>
   );
 }

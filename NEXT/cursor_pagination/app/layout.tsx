@@ -9,7 +9,9 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <main className="min-h-screen py-8 px-6">{children}</main>
+        </Providers>
       </body>
     </html>
   );

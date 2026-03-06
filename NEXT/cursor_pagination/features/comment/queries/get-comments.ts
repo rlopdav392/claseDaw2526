@@ -7,46 +7,57 @@ export type CommentWithMetadata = {
   content: string;
   createdAt: string;
   username: string;
-  isOwner: boolean; // en tu zip venía de isOwner(user, comment)
+  isOwner: boolean;
 };
 
-const TAKE = 2;
+const TAKE = 5;
 
 export const getComments = async (
   ticketId: string,
   cursor?: string,
+  search?: string,
+  sortKey?: string,
+  sortValue?: string,
 ): Promise<PaginatedData<CommentWithMetadata>> => {
   const all = commentsData as Omit<CommentWithMetadata, "isOwner">[];
 
-  // 1) where ticketId
   let filtered = all.filter((c) => c.ticketId === ticketId);
 
-  // 2) orderBy [{ createdAt: "desc" }, { id: "desc" }]
+  // Filtrado por búsqueda
+  if (search) {
+    const q = search.toLowerCase();
+    filtered = filtered.filter(
+      (c) =>
+        c.content.toLowerCase().includes(q) ||
+        c.username.toLowerCase().includes(q),
+    );
+  }
+
+  // Ordenación
+  const key = sortKey ?? "createdAt";
+  const dir = sortValue === "asc" ? 1 : -1;
+
   filtered.sort((a, b) => {
+    if (key === "username") {
+      return a.username.localeCompare(b.username) * dir;
+    }
     const da = new Date(a.createdAt).getTime();
     const db = new Date(b.createdAt).getTime();
-    if (da !== db) return db - da;
-
-    // id desc (numérico)
+    if (da !== db) return (da - db) * dir;
     return Number(b.id) - Number(a.id);
   });
 
-  // 3) cursor filter (equivalente a id: { lt: cursor })
+  // Cursor
   if (cursor) {
     filtered = filtered.filter((c) => Number(c.id) < Number(cursor));
   }
 
-  // 4) take + 1 para saber si hay next page
   let page = filtered.slice(0, TAKE + 1);
-
   const hasNextPage = page.length > TAKE;
   page = hasNextPage ? page.slice(0, -1) : page;
 
   return {
-    list: page.map((c) => ({
-      ...c,
-      isOwner: true, // simplificado (tu zip lo calculaba con sesión)
-    })),
+    list: page.map((c) => ({ ...c, isOwner: true })),
     metadata: {
       count: filtered.length,
       hasNextPage,

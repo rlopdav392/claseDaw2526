@@ -3,38 +3,34 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { getComments, CommentWithMetadata } from "../queries/get-comments";
-import { PaginatedData } from "@/types/pagination";
+import { useQueryState, useQueryStates } from "nuqs";
 import { CommentItem } from "./comment-item";
-import { Spinner } from "@/components/spinner";
+import { CommentSearchInput } from "./comment-search-input";
+import { CommentSortSelect } from "./comment-sort-select";
+import { getComments } from "../queries/get-comments";
+import { searchParser, sortParser, sortOptions } from "../search-params";
 
 type Props = {
   ticketId: string;
-  paginatedComments: PaginatedData<CommentWithMetadata>;
 };
 
-export function Comments({ ticketId, paginatedComments }: Props) {
-  const queryKey = ["comments", ticketId] as const;
+export function Comments({ ticketId }: Props) {
+  const [search] = useQueryState("search", searchParser.search);
+  const [sort] = useQueryStates(sortParser, sortOptions);
 
-  const { data, fetchNextPage, hasNextPage, isFetchingNextPage } =
+  const queryKey = ["comments", ticketId, search, sort.sortKey, sort.sortValue] as const;
+
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
     useInfiniteQuery({
       queryKey,
-      queryFn: ({ pageParam }) => getComments(ticketId, pageParam),
+      queryFn: ({ pageParam }) =>
+        getComments(ticketId, pageParam, search, sort.sortKey, sort.sortValue),
       initialPageParam: undefined as string | undefined,
       getNextPageParam: (lastPage) =>
         lastPage.metadata.hasNextPage ? lastPage.metadata.cursor : undefined,
-      initialData: {
-        pages: [
-          {
-            list: paginatedComments.list,
-            metadata: paginatedComments.metadata,
-          },
-        ],
-        pageParams: [undefined],
-      },
     });
 
-  const comments = data.pages.flatMap((page) => page.list);
+  const comments = data?.pages.flatMap((page) => page.list) ?? [];
 
   const { ref, inView } = useInView();
 
@@ -45,18 +41,39 @@ export function Comments({ ticketId, paginatedComments }: Props) {
   }, [fetchNextPage, hasNextPage, inView, isFetchingNextPage]);
 
   return (
-    <section style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-      {comments.map((c) => (
-        <CommentItem key={c.id} comment={c} />
-      ))}
-
-      {isFetchingNextPage && <Spinner />}
-
-      <div ref={ref} style={{ padding: 8, textAlign: "right" }}>
-        {!hasNextPage && (
-          <span style={{ fontSize: 12, opacity: 0.7 }}>No more comments.</span>
-        )}
+    <>
+      <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+        <CommentSearchInput />
+        <CommentSortSelect />
       </div>
-    </section>
+
+      {isLoading ? (
+        <p className="text-sm text-gray-500">Cargando comentarios...</p>
+      ) : (
+        <>
+          <div className="flex flex-col gap-y-2">
+            {comments.length === 0 && (
+              <p className="text-sm text-gray-500">No hay comentarios.</p>
+            )}
+
+            {comments.map((comment) => (
+              <CommentItem key={comment.id} comment={comment} />
+            ))}
+
+            {isFetchingNextPage && (
+              <p className="text-center text-sm text-gray-500 py-4">
+                Cargando más comentarios...
+              </p>
+            )}
+          </div>
+
+          <div ref={ref}>
+            {!hasNextPage && comments.length > 0 && (
+              <p className="text-right text-xs italic">No hay más comentarios.</p>
+            )}
+          </div>
+        </>
+      )}
+    </>
   );
 }
