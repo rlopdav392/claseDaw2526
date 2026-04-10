@@ -46,7 +46,7 @@ function Header() {
         }`}
         ref={firstRef}
       >
-        <section className="grid grid-cols-[auto_1fr_auto] px-16 py-4  border-b border-neutral-300 items-center transition-all duration-300">
+        <section className="grid grid-cols-[auto_1fr_auto] px-[3.2rem] py-4  border-b border-neutral-300 items-center transition-all duration-300">
           <img
             src="static/airbnb-logo.png"
             alt="logo airbnb"

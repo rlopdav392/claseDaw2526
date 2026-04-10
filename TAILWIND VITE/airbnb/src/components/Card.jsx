@@ -10,7 +10,7 @@ function Card() {
           <div className="flex items-center gap-2">
             <FontAwesomeIcon
               icon={faStar}
-              className="text-yellow-400 w-6 h-6"
+              className="text-yellow-400 w-6 h-6 text-kk"
             />
             <p className="text-sm font-light">5.0</p>
           </div>
