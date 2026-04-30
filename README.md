@@ -50,7 +50,7 @@ Así mismo, se ha añadido la siguiente documentación, como ideas para incorpor
 - **Anteproyecto:** lunes 19 de enero (19/01/2026)  
 - **Seguimientos:** Semanal o quincenal, me adapto a vosotros.  
 - **Fechas de entrega/exposición:** pueden sufrir cambios, por otras fechas a las que están supeditadas:  
-  - **Fecha y hora de entrega:** Lunes 1 de junio (01/06/2026)  => **Domingo 24 de Mayo**, hora límite: las 14:00 pm del domingo. A partir de las 14:00 no se tendrá en cuenta la documentación subida.
+  - **Fecha y hora de entrega:** Lunes 1 de junio (01/06/2026)  => **Domingo 24 de Mayo**, hora límite: las **14:00pm** del domingo. A partir de las 14:00 no se tendrá en cuenta la documentación subida.
   - **Vídeo:** El vídeo de 5 minutos ha de reflejar mínimo los requerimiento pedidos tanto desde figma, maquetación css, desarrollo y despliegue. De tal forma, que yo viendo el vídeo sea capaz de evaluaros los requerimientos mínimos de esas 4 partes, luego si da tiempo, pues ya metéis las funcionalidades complejas.
   - **Ubicación de toda la doc** Toda la documentación: anteproyecto más luego toda la documentación final, tenéis que tener un enlace en el readme de vuestro github, que me permita acceder directamente a toda la doc, es algo temporal, luego una vez expuesto el tfg, ya lo podéis quitar del readme, es solo, para tener un acceso directo a vuestro doc, sin tener que volverme loca buscando en todas las páginas de vuestro repo, me ponéis los enlaces de vuestra doc directamente en el readme, y así yo tengo mi acceso directo, luego se puede quitar, repito, es solo algo temporal.
   - **Fecha de exposición:** Martes 2 de junio (02/06/2026) => **Lunes 25 de Mayo**
