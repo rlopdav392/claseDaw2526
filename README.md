@@ -48,8 +48,8 @@ Así mismo, se ha añadido la siguiente documentación, como ideas para incorpor
 - **Anteproyecto:** lunes 19 de enero (19/01/2026)  
 - **Seguimientos:** Semanal o quincenal, me adapto a vosotros.  
 - **Fechas de entrega/exposición:** pueden sufrir cambios, por otras fechas a las que están supeditadas:  
-  - **Fecha de entrega:** Lunes 1 de junio (01/06/2026)  
-  - **Fecha de exposición:** Martes 2 de junio (02/06/2026)
+  - **Fecha de entrega:** Lunes 1 de junio (01/06/2026)  => Domingo 24 de Mayo 
+  - **Fecha de exposición:** Martes 2 de junio (02/06/2026) => Lunes 25 de Mayo
 
 
 
