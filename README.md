@@ -5,8 +5,9 @@ En este repositorio se encuentra centralizada toda la información relativa a lo
 ## Requisitos y criterios a seguir
 Tanto los criterios generales como los criterios particulares por cada módulo se encuentran en la [Wiki de este repositorio](https://github.com/rlopdav392/claseDaw2526/wiki/01%E2%80%90Normativa-del-proyecto)
 
-[CONSIDERACIONES DE LOS REQUISITOS A TENER EN CUENTA - PARTE 1](https://github.com/rlopdav392/claseDaw2526/wiki/A-TENER-EN-CUENTA-(PARTE-1))
-[CONSIDERACIONES DE LOS REQUISITOS A TENER EN CUENTA - PARTE 2](https://github.com/rlopdav392/claseDaw2526/wiki/A-TENER-EN-CUENTA-(PARTE-2))
+- [CONSIDERACIONES DE LOS REQUISITOS A TENER EN CUENTA - PARTE 1](https://github.com/rlopdav392/claseDaw2526/wiki/A-TENER-EN-CUENTA-(PARTE-1))
+
+- [CONSIDERACIONES DE LOS REQUISITOS A TENER EN CUENTA - PARTE 2](https://github.com/rlopdav392/claseDaw2526/wiki/A-TENER-EN-CUENTA-(PARTE-2))
 
 Así mismo, se ha añadido la siguiente documentación, como ideas para incorporar a vuestro proyecto:
 
