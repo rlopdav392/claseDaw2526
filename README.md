@@ -9,7 +9,7 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 
 - [CONSIDERACIONES DE LOS REQUISITOS A TENER EN CUENTA - PARTE 2](https://github.com/rlopdav392/claseDaw2526/wiki/A-TENER-EN-CUENTA-(PARTE-2))
   
-- [CONSIDERACIONES A LA HORA DE HACER EL VÍDEO](https://github.com/rlopdav392/claseDaw2526/wiki/_new)
+- [CONSIDERACIONES A LA HORA DE HACER EL VÍDEO](https://github.com/rlopdav392/claseDaw2526/wiki/V%C3%8DDEO2))
   
 - [CONSIDERACIONES A LA HORA DE PREPARAR LA DEFENSA](https://github.com/rlopdav392/claseDaw2526/wiki/EXPOSICI%C3%93N)
 
