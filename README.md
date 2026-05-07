@@ -8,6 +8,10 @@ Tanto los criterios generales como los criterios particulares por cada módulo s
 - [CONSIDERACIONES DE LOS REQUISITOS A TENER EN CUENTA - PARTE 1](https://github.com/rlopdav392/claseDaw2526/wiki/A-TENER-EN-CUENTA-(PARTE-1))
 
 - [CONSIDERACIONES DE LOS REQUISITOS A TENER EN CUENTA - PARTE 2](https://github.com/rlopdav392/claseDaw2526/wiki/A-TENER-EN-CUENTA-(PARTE-2))
+  
+- [CONSIDERACIONES A LA HORA DE HACER EL VÍDEO](https://github.com/rlopdav392/claseDaw2526/wiki/_new)
+  
+- [CONSIDERACIONES A LA HORA DE PREPARAR LA DEFENSA](https://github.com/rlopdav392/claseDaw2526/wiki/EXPOSICI%C3%93N)
 
 Así mismo, se ha añadido la siguiente documentación, como ideas para incorporar a vuestro proyecto:
 
@@ -53,7 +57,7 @@ Así mismo, se ha añadido la siguiente documentación, como ideas para incorpor
   - **Fecha y hora de entrega:** Lunes 1 de junio (01/06/2026)  => **Domingo 24 de Mayo**, hora límite: las **14:00pm** del domingo. A partir de las 14:00 no se tendrá en cuenta la documentación subida.
   - **Vídeo:** El vídeo de 5 minutos ha de reflejar mínimo los requerimiento pedidos tanto desde figma, maquetación css, desarrollo y despliegue. De tal forma, que yo viendo el vídeo sea capaz de evaluaros los requerimientos mínimos de esas 4 partes, luego si da tiempo, pues ya metéis las funcionalidades complejas.
   - **Ubicación de toda la doc** Toda la documentación: anteproyecto más luego toda la documentación final, tenéis que tener un enlace en el readme de vuestro github, que me permita acceder directamente a toda la doc, es algo temporal, luego una vez expuesto el tfg, ya lo podéis quitar del readme, es solo, para tener un acceso directo a vuestro doc, sin tener que volverme loca buscando en todas las páginas de vuestro repo, me ponéis los enlaces de vuestra doc directamente en el readme, y así yo tengo mi acceso directo, luego se puede quitar, repito, es solo algo temporal.
-  - **Fecha de exposición:** Martes 2 de junio (02/06/2026) => **Lunes 25 de Mayo** [Esquema para vuestra defensa](https://github.com/rlopdav392/claseDaw2526/wiki/EXPOSICI%C3%93N)
+  - **Fecha de exposición:** Martes 2 de junio (02/06/2026) => **Lunes 25 de Mayo** 
 
 
 
