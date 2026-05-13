@@ -65,7 +65,7 @@ Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de pregunt
 **Viernes 22 de mayo (22/05/2026)**
 | Hora inicio | Hora fin | Alumno |
 |------------|----------|--------|
-| 11:30 | 11:45 | Lucía Salido Lópe |
+| 11:30 | 11:45 | Lucía Salido López |
 | 11:45 | 12:00 | Sergio Sarmiento Moreno |
 
 **Martes 2 de junio (02/06/2026)**
@@ -83,6 +83,6 @@ Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de pregunt
 | 18:30 | 18:45 | José Ángel Rojas Moreno |
 | 18:50 | 19:05 | José Carlos Ruiz Frías |
 | 19:10 | 19:25 | David Ruiz Manuel |
-| 19:30 | 19:45 | Cristian Sánchez Lagosz |
+| 19:30 | 19:45 | Cristian Sánchez Lagos |
 
 
