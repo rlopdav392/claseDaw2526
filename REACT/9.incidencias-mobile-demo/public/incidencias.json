@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "descripcion": "Fuga de agua en el baño del 3ºB. Gotera visible en el techo del 2ºB.",
+    "propiedad": "Calle Mayor 12, 3º B",
+    "tipo": "Reparación",
+    "estado": "PENDIENTE",
+    "fecha": "2026-05-10T09:30:00"
+  },
+  {
+    "id": 2,
+    "descripcion": "Ascensor hace ruido extraño al subir. Revisión preventiva solicitada.",
+    "propiedad": "Avda. Libertad 4",
+    "tipo": "Mantenimiento",
+    "estado": "EN PROGRESO",
+    "fecha": "2026-05-11T14:00:00"
+  },
+  {
+    "id": 3,
+    "descripcion": "Portal sucio después de obra en el local comercial.",
+    "propiedad": "Plaza del Olmo 1",
+    "tipo": "Limpieza",
+    "estado": "RESUELTA",
+    "fecha": "2026-05-08T08:15:00"
+  }
+]
