@@ -54,16 +54,21 @@ Así mismo, se ha añadido la siguiente documentación, como ideas para incorpor
 - **Anteproyecto:** lunes 19 de enero (19/01/2026)  
 - **Seguimientos:** Semanal o quincenal, me adapto a vosotros.  
 - **Fechas de entrega/exposición:** pueden sufrir cambios, por otras fechas a las que están supeditadas:  
-  - **Fecha y hora de entrega:** Lunes 1 de junio (01/06/2026)  => **Domingo 24 de Mayo**, hora límite: las **14:00pm** del domingo. A partir de las 14:00 no se tendrá en cuenta la documentación subida.
-  - **Vídeo:** El vídeo de 5 minutos ha de reflejar mínimo los requerimiento pedidos tanto desde figma, maquetación css, desarrollo y despliegue. De tal forma, que yo viendo el vídeo sea capaz de evaluaros los requerimientos mínimos de esas 4 partes, luego si da tiempo, pues ya metéis las funcionalidades complejas.
-  - **Ubicación de toda la doc** Toda la documentación: anteproyecto más luego toda la documentación final, tenéis que tener un enlace en el readme de vuestro github, que me permita acceder directamente a toda la doc, es algo temporal, luego una vez expuesto el tfg, ya lo podéis quitar del readme, es solo, para tener un acceso directo a vuestro doc, sin tener que volverme loca buscando en todas las páginas de vuestro repo, me ponéis los enlaces de vuestra doc directamente en el readme, y así yo tengo mi acceso directo, luego se puede quitar, repito, es solo algo temporal.
-  - **Fecha de exposición:** Martes 2 de junio (02/06/2026) => **Lunes 25 de Mayo** 
-
-
+- **Fecha y hora de entrega:** **Domingo 24 de mayo (24/05/2026)**  **hora límite: las 00:00 del domingo**. A partir del lunes 25 de mayo, empezaremos a mirar vuestros github (documentación + código)
+- **Vídeo:** El vídeo de 5 minutos ha de reflejar mínimo los requerimiento pedidos tanto desde figma, maquetación css, desarrollo y despliegue. De tal forma, que yo viendo el vídeo sea capaz de evaluaros los requerimientos mínimos de esas 4 partes, luego si da tiempo, pues ya metéis las funcionalidades complejas.
+- **Ubicación de toda la doc** Toda la documentación: anteproyecto más luego toda la documentación final, tenéis que tener un enlace en el readme de vuestro github, que me permita acceder directamente a toda la doc, es algo temporal, luego una vez expuesto el tfg, ya lo podéis quitar del readme, es solo, para tener un acceso directo a vuestro doc, sin tener que volverme loca buscando en todas las páginas de vuestro repo, me ponéis los enlaces de vuestra doc directamente en el readme, y así yo tengo mi acceso directo, luego se puede quitar, repito, es solo algo temporal.
+- **Fecha de exposición:** **Martes 2 de junio (02/06/2026)**
 
 ## Cuadrante horario de las exposiciones: 
 Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de preguntas por parte del profesorado.
 
+**Viernes 22 de mayo (22/05/2026)**
+| Hora inicio | Hora fin | Alumno |
+|------------|----------|--------|
+| 11:30 | 11:45 | Lucía Salido Lópe |
+| 11:45 | 12:00 | Sergio Sarmiento Moreno |
+
+**Martes 2 de junio (02/06/2026)**
 | Hora inicio | Hora fin | Alumno |
 |------------|----------|--------|
 | 15:30 | 15:45 | El Arbi Addya Daoui |
@@ -78,7 +83,7 @@ Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de pregunt
 | 18:30 | 18:45 | José Ángel Rojas Moreno |
 | 18:50 | 19:05 | José Carlos Ruiz Frías |
 | 19:10 | 19:25 | David Ruiz Manuel |
-| 19:30 | 19:45 | Lucía Salido López |
-| 19:50 | 20:05 | Cristian Sánchez Lagos |
+| 19:30 | 19:45 | Cristian Sánchez Lagosz |
+| 19:50 | 20:05 | Lucía Salido Lópe |
 | 20:10 | 20:25 | Sergio Sarmiento Moreno |
 
