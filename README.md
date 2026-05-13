@@ -84,6 +84,5 @@ Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de pregunt
 | 18:50 | 19:05 | José Carlos Ruiz Frías |
 | 19:10 | 19:25 | David Ruiz Manuel |
 | 19:30 | 19:45 | Cristian Sánchez Lagosz |
-| 19:50 | 20:05 | Lucía Salido Lópe |
-| 20:10 | 20:25 | Sergio Sarmiento Moreno |
+
 
