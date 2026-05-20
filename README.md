@@ -62,6 +62,8 @@ Así mismo, se ha añadido la siguiente documentación, como ideas para incorpor
 ## Cuadrante horario de las exposiciones: 
 Intervalos de 15 minutos, donde 10 minutos son de exposición y 5 son de preguntas por parte del profesorado.
 
+**LUGAR DE EXPOSICIÓN**: pues nuestra aula, la aula de 2ºDAW
+
 **Viernes 22 de mayo (22/05/2026)**
 | Hora inicio | Hora fin | Alumno |
 |------------|----------|--------|
