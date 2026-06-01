@@ -36,7 +36,7 @@ Así mismo, se ha añadido la siguiente documentación, como ideas para incorpor
 - [El Arbi Addya Daoui](https://github.com/Elarbiaddya/detailling_mope)
 - [Fernando Castro Martínez](https://github.com/fcasmar807/ElArtesano)
 - [Sebastián Díaz López](https://github.com/sdialop424/TFG-Inmobiliaria)
-- Andrés Heredia Sánchez
+- [Andrés Heredia Sánchez](https://github.com/ahersan1203/TFG_Zona_Gamer)
 - [Ángel Hijano Zato](https://github.com/ahijzat/TFG-2DAW-Libreria)
 - [Nicolás Navarrete Ríos](https://github.com/nnavrio140/TFG-Peluqueria)
 - [Iván Darío Parra Iglesias](https://github.com/Iparigl784/tfgDaw/wiki/1.%E2%80%90-Presentaci%C3%B3n-del-proyecto)
